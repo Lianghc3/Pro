@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <title>缴费单</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="css/pro.css?embed" />
+  <link rel="stylesheet" type="text/css" href="vendor/ionicons/css/ionicons.css" />
+  <!-- 这个页面的CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bill.css">
+</head>
+
+<body class="ui-app">
+
+  <div class="my-top-bar ui-top-bar js-no-bounce">
+    <h6>水电费清单</h6>
+  </div>
+
+  <!-- 底部切换页面的标签 -->
+  <div class="ui-bottom-bar js-no-bounce" role="toolbar">
+    <a class="ui-bottom-bar-button js-active" role="button" data-toggle="tab" data-target=".page1">
+      <span class="ui-icon ion-ios7-filing-outline"></span>
+      <span class="ui-label">缴费单</span>
+    </a>
+  </div>
+
+
+  <div class="ui-page page1 js-active">
+    <div class="ui-page-content">
+
+      <div class="ui-tab js-active" id="page1-tab1" role="tabpanel">
+        <h3 class="ui-caption">请选择年月</h3>
+
+        <ul class="ui-list">
+          <div class="my-select-list">
+
+
+            <select name="year" class="my-select" id="my-year">
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+            </select>
+            <span>年</span>
+
+            <select name="month" class="my-select" id="my-month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <span>月</span>
+
+            <button class="ui-button ui-info" id="my-button-hide-and-show">隐藏已缴费</button>
+
+          </div>
+        </ul>
+
+
+
+
+        <!-- 2015年4月 -->
+        <ul class="ui-list year-2015 month-4 my-bill">
+          <li class="ui-item my-item">
+            <a href="#" class="my-floor-bar">二楼</a>
+            <div class="my-floor">
+              <!-- 房间号 -->
+              <ul class="my-bill-ul my-room">
+                <li>201</li>
+                <li>202</li>
+                <li>203</li>
+                <li>204</li>
+                <li>205</li>
+                <li>206</li>
+                <li>207</li>
+                <li>208</li>
+                <li>209</li>
+              </ul>
+              <!-- 水电费 -->
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+              <!-- 缴费标签 -->
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">三楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>301</li>
+                <li>302</li>
+                <li>303</li>
+                <li>304</li>
+                <li>305</li>
+                <li>306</li>
+                <li>307</li>
+                <li>308</li>
+                <li>309</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">四楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>401</li>
+                <li>402</li>
+                <li>403</li>
+                <li>404</li>
+                <li>405</li>
+                <li>406</li>
+                <li>407</li>
+                <li>408</li>
+                <li>409</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+        <!-- 2015年3月 -->
+        <ul class="ui-list year-2015 month-3 my-bill">
+          <li class="ui-item my-item">
+            <a href="#" class="my-floor-bar">二楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>201</li>
+                <li>202</li>
+                <li>203</li>
+                <li>204</li>
+                <li>205</li>
+                <li>206</li>
+                <li>207</li>
+                <li>208</li>
+                <li>209</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>330元</li>
+                <li>339元</li>
+                <li>344元</li>
+                <li>320元</li>
+                <li>339元</li>
+                <li>344元</li>
+                <li>320元</li>
+                <li>339元</li>
+                <li>344元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">三楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>301</li>
+                <li>302</li>
+                <li>303</li>
+                <li>304</li>
+                <li>305</li>
+                <li>306</li>
+                <li>307</li>
+                <li>308</li>
+                <li>309</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">四楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>401</li>
+                <li>402</li>
+                <li>403</li>
+                <li>404</li>
+                <li>405</li>
+                <li>406</li>
+                <li>407</li>
+                <li>408</li>
+                <li>409</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+        <!-- 2014年10月 -->
+        <ul class="ui-list year-2014 month-10 my-bill">
+          <li class="ui-item my-item">
+            <a href="#" class="my-floor-bar">二楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>201</li>
+                <li>202</li>
+                <li>203</li>
+                <li>204</li>
+                <li>205</li>
+                <li>206</li>
+                <li>207</li>
+                <li>208</li>
+                <li>209</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>530元</li>
+                <li>539元</li>
+                <li>544元</li>
+                <li>520元</li>
+                <li>539元</li>
+                <li>544元</li>
+                <li>520元</li>
+                <li>539元</li>
+                <li>544元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">三楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>301</li>
+                <li>302</li>
+                <li>303</li>
+                <li>304</li>
+                <li>305</li>
+                <li>306</li>
+                <li>307</li>
+                <li>308</li>
+                <li>309</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="ui-item">
+            <a href="#" class="my-floor-bar">四楼</a>
+            <div class="my-floor">
+              <ul class="my-bill-ul my-room">
+                <li>401</li>
+                <li>402</li>
+                <li>403</li>
+                <li>404</li>
+                <li>405</li>
+                <li>406</li>
+                <li>407</li>
+                <li>408</li>
+                <li>409</li>
+              </ul>
+
+              <ul class="my-bill-ul my-money">
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+                <li>220元</li>
+                <li>139元</li>
+                <li>144元</li>
+              </ul>
+
+              <ul class="my-bill-ul my-label">
+                <!-- <li><span class="my-paid">已缴费</span></li>
+                <li><span class="my-unpaid">未缴费</span></li>
+                <li><span class="my-paid">已缴费</span></li> -->
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-paid" disabled="disabled">已缴费</button></li>
+                <li><button class="my-button ui-button ui-info my-unpaid">未缴费</button></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 点击 未缴费 后弹出的对话框 可是有bug弹不出来这个对话框... -->
+  <div id="myAlert1" role="alertdialog" class="ui-dialog" aria-labelledby="myAlertLable" aria-hidden="true" style="display: none;">
+    <div class="js-dialog-content ui-alert">
+      <div class="ui-alert-header"><h3 class="ui-alert-title" id="myAlertLable">缴费</h3></div>
+      <div class="ui-alert-body" role="note"><p>点击确定将该宿舍标记为“已缴费”</p></div>
+      <div class="ui-alert-footer">
+        <!-- 尽量避免使用 button 元素，在小米上是会有点击高亮边框 -->
+        <a data-dismiss="dialog" role="button" class="ui-alert-button" id="my-add-room">确定</a>
+        <a data-dismiss="dialog" role="button" class="ui-alert-button">返回</a>
+      </div>
+    </div>
+  </div>
+
+  <script data-main="js/bill.js" src="vendor/requirejs/require.js"></script>
+</body>
+</html>
